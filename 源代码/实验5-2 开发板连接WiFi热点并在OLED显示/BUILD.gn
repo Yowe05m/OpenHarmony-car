@@ -1,0 +1,19 @@
+static_library("demo_wifi_display") {
+    sources = [
+        "demo_wifi_display.c",
+        "ssd1306_oled.c",
+        "ssd1306.c",
+        "ssd1306_fonts.c",
+    ]
+
+    include_dirs = [
+        ".",
+        "../ssd1306/ssd1306",
+        "//device/hisilicon/hispark_pegasus/sdk_liteos/app/demo/include",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+        "//device/hisilicon/hispark_pegasus/hi3861_adapter/hals/communication/wifi_lite/wifiservice",
+        "//device/hisilicon/hispark_pegasus/hi3861_adapter/kal",
+    ]
+}
